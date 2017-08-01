@@ -1,0 +1,21 @@
+{
+  "name": "webpack-mild-compile",
+  "version": "1.0.0",
+  "description": "a trick to prevent webpack endlessly compile",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yessky/webpack-mild-compile.git"
+  },
+  "keywords": [
+    "webpack",
+    "endless",
+    "compile"
+  ],
+  "author": "aaron.xiao <admin@veryos.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yessky/webpack-mild-compile/issues"
+  },
+  "homepage": "https://github.com/yessky/webpack-mild-compile#readme"
+}
