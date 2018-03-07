@@ -1,6 +1,6 @@
 {
   "name": "webpack-mild-compile",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "a trick to prevent webpack endlessly compile",
   "main": "./index.js",
   "repository": {
