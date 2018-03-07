@@ -1,9 +1,9 @@
 # webpack-mild-compile
-a workaround to prevent webpack endlessly compile for `webpack-dev-middleware`. see [#25](https://github.com/webpack/watchpack/issues/25)
+a workaround to prevent webpack endlessly compile, see more at [#25](https://github.com/webpack/watchpack/issues/25)
 
 this is very useful, if you are using some webpack plugins like webpack-iconfont, webpack-spritesmith.
 
-if this project resolves your headache, please encourage it a star.
+if this project resolves your headache, plz star it.
 
 如果在webpack的watch动作前创建文件将在10秒内引发多次重复编译，本项目提供了一种可行的解决方案用于修复该问题。
 
