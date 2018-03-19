@@ -16,7 +16,12 @@ if this project resolves your headache, plz star it.
 
 如果这个项目解决了让你头痛的问题，那么点个赞吧
 
-## Usage 1 - work as a webpack plugin (用法1：作为webpack的插件使用)
+## Install（安装）
+
+  npm i --save-dev webpack-mild-compile
+
+## Usage 1 - work as a webpack plugin (作为webpack的插件使用)
+
 ```JavaScript
 const compiler = webpack(webpackConfig);
 const WebpackMildCompile = require('webpack-mild-compile').Plugin;
@@ -28,7 +33,8 @@ plugins: [
 ```
 
 
-## Usage 2 - work as a api (用法2: 作为api使用)
+## Usage 2 - work as a api (作为api使用)
+
 ```JavaScript
 const compiler = webpack(webpackConfig);
 require('webpack-mild-compile')(compiler);
