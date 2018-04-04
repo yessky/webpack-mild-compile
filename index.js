@@ -10,8 +10,9 @@ const pluginName = 'MildCompile';
 function timefix(compiler) {
   const timefix = 11000;
   let watching = {};
-  const onWatchRun = function () {
+  const onWatchRun = function (c, callback) {
     watching.startTime += timefix;
+    callback();
   };
   const onDone = function (stats) {
     stats.startTime -= timefix;
