@@ -25,7 +25,6 @@ npm i --save-dev webpack-mild-compile
 ## Webpack Plugin (作为webpack插件使用)
 
 ```JavaScript
-const compiler = webpack(webpackConfig);
 const WebpackMildCompile = require('webpack-mild-compile').Plugin;
 
 ...
