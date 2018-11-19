@@ -12,7 +12,7 @@ function timefix(compiler) {
   let watching = {};
   const onWatchRun = function (c, callback) {
     watching.startTime += timefix;
-    callback();
+    callback && callback();
   };
   const onDone = function (stats) {
     stats.startTime -= timefix;
@@ -23,8 +23,8 @@ function timefix(compiler) {
     return watching;
   };
   if (compiler.hooks) {
-    compiler.hooks.watchRun.tap(pluginName, onWatchRun);
-    compiler.hooks.done.tap(pluginName, onDone);
+    compiler.hooks.watchRun.tapAsync(pluginName, onWatchRun);
+    compiler.hooks.done.tapAsync(pluginName, onDone);
   } else {
     compiler.plugin('watch-run', onWatchRun);
     compiler.plugin('done', onDone);
