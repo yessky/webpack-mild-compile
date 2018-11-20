@@ -14,8 +14,9 @@ function timefix(compiler) {
     watching.startTime += timefix;
     callback && callback();
   };
-  const onDone = function (stats) {
+  const onDone = function (stats, callback) {
     stats.startTime -= timefix;
+    callback && callback();
   };
   const aspectWatch = compiler.watch;
   compiler.watch = function () {
