@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/webpack-mild-compile.svg)](https://npmjs.com/package/webpack-mild-compile) [![NPM downloads](https://img.shields.io/npm/dm/webpack-mild-compile.svg)](https://npmjs.com/package/webpack-mild-compile)
 
-webpack v2/3/4 supported.
+webpack v2/3/4/5 supported.
 
 a workaround to prevent webpack endlessly compile, see more at [#25](https://github.com/webpack/watchpack/issues/25)
 

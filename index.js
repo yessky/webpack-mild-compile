@@ -15,7 +15,12 @@ function timefix(compiler) {
     callback && callback();
   };
   const onDone = function (stats, callback) {
-    stats.startTime -= timefix;
+    // Webpack5 use stats.compilation.startTime instead
+    if (stats.hasOwnProperty('startTime')) {
+      stats.startTime -= timefix;
+    } else {
+      stats.compilation.startTime -= timefix;
+    }
     callback && callback();
   };
   const aspectWatch = compiler.watch;
